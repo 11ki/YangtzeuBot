@@ -12,8 +12,8 @@ import smtplib：发送邮件
 
  - 查看POST登陆时提交的表单
 
-> username: 2018*****
-password:c06c7d1627098d4be9e66ebb8dc3626ee38a4946
+> username: 2018*****  
+password:c06c7d1627098d4be9e66ebb8dc3626ee38a4946  
 encodedPassword:  
 session_locale: zh_CN
 
@@ -48,16 +48,16 @@ JS：http://221.233.24.23/eams/static/scripts/sha1.js
  - 然后通过命令`screen -L -t bot -dmS bots yangtzeuBot`启动程序（注意此处的yangtzeuBot为程序路径，如果没有事先进行软链接要替换为绝对路径），这条语句的意思是“启动bots会话运行yangtzeuBot程序 ，窗口名为bot，日志文件路径为`/tmp/screenlog/bot.log`”，程序运行后我们就可以在日志文件中看到主程序Print语句打印的内容或者是报错信息。
 ## 课程表接口分析
  - 可以看出是POST登陆：
- > Request URL: http://221.233.24.23/eams/courseTableForStd!courseTable.action
-Request Method: POST
-Status Code: 200 OK
-Remote Address: 221.233.24.23:80
+ > Request URL: http://221.233.24.23/eams/courseTableForStd!courseTable.action  
+Request Method: POST  
+Status Code: 200 OK  
+Remote Address: 221.233.24.23:80  
 Referrer Policy: no-referrer-when-downgrade
  - 表单内容为：
-> ignoreHead: 1
-setting.kind: std （课表类型，个人课表或者班级课表）
-startWeek: 
-semester.id: 69（学期ID）
+> ignoreHead: 1  
+setting.kind: std （课表类型，个人课表或者班级课表）  
+startWeek:  
+semester.id: 69（学期ID）  
 ids: 455092
 - 接口源码：
 ```javascript
