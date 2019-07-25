@@ -79,7 +79,7 @@ ids: 455092
 			index =0*unitCount+3;
 			table0.activities[index][table0.activities[index].length]=activity;
 ```
-可以看出是通过JS填充的课表，分析后可知`index =0*unitCount+3;`中的两个数字即为这门学科在课程表中的坐标，第一个数字为列号，第二个数字为行号。通过这个坐标可以知道这门学科是星期几的第几节课，在把抓取的课程表保存为Excel格式时也会用到。
+可以看出是通过JS填充的课表，分析后可知`index =0*unitCount+3;`中的两个数字即为这门学科在课程表中的坐标，第一个数字为列号，第二个数字为行号。通过这个坐标可以知道这门学科是星期几的第几节课，在把抓取的课程表保存为Excel格式时也会用到这个坐标
 ## 相关接口
 学期成绩：http://221.233.24.23/eams/teach/grade/course/person!search.action?semesterId=学期ID  
 全部成绩：http://221.233.24.23/eams/teach/grade/course/person!historyCourseGrade.action?projectType=MAJOR  
